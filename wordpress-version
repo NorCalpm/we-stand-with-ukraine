@@ -1,0 +1,8 @@
+//stand with Ukraine this is to be added to your theme or child theme functions.php to avoid the javascript being wonked by wordpress
+function wpb_hook_javascript() {
+    ?>
+        <script src="https://cdn.jsdelivr.net/gh/virae/we-stand-with-ukraine@v1.0.1/badge.js" async></script>
+        
+    <?php
+}
+add_action('wp_head', 'wpb_hook_javascript');
